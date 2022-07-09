@@ -21,31 +21,31 @@ const Login = () => {
             </Link>
           </div>
           <div className="form-group mt-3 text-left">
-              {/* <label>Email address</label> */}
-              <input
-                  type="email"
-                  required
-                  className="form-control mt-1"
-                  placeholder="please input your email address"
-              />
-              <div className="icon-person">
-                  <i className="bi bi-envelope-fill"></i>
-              </div>
+            {/* <label>Email address</label> */}
+            <input
+              type="email"
+              required
+              className="form-control mt-1"
+              placeholder="please input your email address"
+            />
+            <div className="icon-person">
+              <i className="bi bi-envelope-fill"></i>
+            </div>
           </div>
           <div className="form-group mt-3 text-left">
-              {/* <label>Password</label> */}
-              <input
-                  type="password"
-                  className="form-control mt-1"
-                  placeholder="please input your password"
-              />
-              <div className="icon-person">
-                  <i className="bi bi-key-fill"></i>
-              </div>
+            {/* <label>Password</label> */}
+            <input
+              type="password"
+              className="form-control mt-1"
+              placeholder="please input your password"
+            />
+            <div className="icon-person">
+              <i className="bi bi-key-fill"></i>
+            </div>
           </div>
           <div className="d-grid gap-2 mt-3">
             <button className="btn btn-primary text-center">
-                Submit
+              Submit
             </button>
           </div>
           <p className="text-center mt-2">
