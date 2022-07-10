@@ -1,10 +1,12 @@
-import React from "react";
-import BootstrapTable from "react-bootstrap-table-next";
-import filterFactory, { textFilter } from "react-bootstrap-table2-filter";
-import { Button } from "react-bootstrap";
+import React from 'react';
+import BootstrapTable from 'react-bootstrap-table-next';
+import { Table } from 'react-bootstrap';
+import filterFactory, { textFilter } from 'react-bootstrap-table2-filter';
+import { Button } from 'react-bootstrap';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit';
-import AddJob from '../components/AddJob'
+import AddJob from '../components/AddJob';
+import EditJob from '../components/EditJob';
 
 const { SearchBar } = Search;
 
@@ -80,6 +82,16 @@ const pagination = paginationFactory({
 });
 
 const JobAdd = () => {
+    const linkFollow = (cell, row, rowIndex, formatExtraData) => {
+        return (
+            <div>
+                <Button> Apply </Button> &nbsp; 
+                {/* <Button> Edit </Button> */}
+                <EditJob/> 
+            </div>
+        );
+    };
+
 
     const columns = [
         {
@@ -134,7 +146,8 @@ const JobAdd = () => {
         },
         {
             dataField: "action",
-            text: "Action:"
+            text: "Action:",
+            formatter: linkFollow
         }
     ];
 
@@ -216,6 +229,41 @@ const JobAdd = () => {
                             rowStyle={ rowStyle }
                             // rowStyle={{ backgroundColor: 'red' }}
                         />
+                        {/* <Table striped bordered hover responsive="md">
+                            
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Shirt</td>
+                                    <td>2</td>
+                                    <td>$200</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>T-shirt</td>
+                                    <td>1</td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Pant</td>
+                                    <td>1</td>
+                                    <td>$300</td>
+                                </tr>
+                                <tr>
+                                    <td colSpan="3">Total Price</td>
+                                    <td>$600</td>
+                                </tr>
+                            </tbody>
+                        </Table>  */}
                     </div>
                 )}
             </ToolkitProvider>
