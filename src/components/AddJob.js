@@ -23,7 +23,7 @@ function AddJob() {
 
     return (
         <>
-            <Button className="btn btn-primary text-center" onClick={showModal}>Add Job</Button>
+            <Button className="btn btn-primary text-center btn-add" onClick={showModal}>Add Job</Button>
             <Modal show={isOpen} onHide={hideModal}>
                 <Modal.Header>
                     <Modal.Title className='text-center'> Add Job</Modal.Title>

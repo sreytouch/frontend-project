@@ -3,11 +3,20 @@
 table {
   border-collapse: collapse;
   table-layout: fixed;
-  width: 310px;
+  vertical-align: middle;
 }
+table thead tr th {
+  vertical-align: middle;
+}
+
+.btn-add{
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+
 table td {
-  border: solid 1px #666;
-  width: 110px;
+  vertical-align: middle;
   word-wrap: break-word;
 }
 

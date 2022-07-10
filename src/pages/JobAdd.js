@@ -63,8 +63,8 @@ const AddButton = props => {
 
 
 const pagination = paginationFactory({
-    page: 2,
-    sizePerPage: 5,
+    page: 1,
+    sizePerPage: 10,
     lastPageText: '>>',
     firstPageText: '<<',
     nextPageText: '>',
@@ -94,6 +94,11 @@ const JobAdd = () => {
 
 
     const columns = [
+        {
+            dataField: "id",
+            text: "Id:",
+            sort: true
+        },
         {
             dataField: "description",
             text: "Description:",
