@@ -1,5 +1,16 @@
 /* === start ===  */
 
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 310px;
+}
+table td {
+  border: solid 1px #666;
+  width: 110px;
+  word-wrap: break-word;
+}
+
 .App {
   text-align: center;
 }
@@ -24,6 +35,11 @@
 .text-right{
   text-align: right;
 }
+
+.text-center{
+  text-align: center;
+}
+
 
 .text-left{
   text-align: left;

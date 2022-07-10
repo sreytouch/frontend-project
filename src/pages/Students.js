@@ -6,7 +6,7 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import ToolkitProvider, {Search} from 'react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit';
 
-function Students() {
+const Students = () => {
   const products = [
     { id: 1, tags: 'George', state: 'Monkey', city:'AA', companyName:'aaa' },
     { id: 2, tags: 'Jeffrey', state: 'Giraffe', city:'CC', companyName:'fff' },
