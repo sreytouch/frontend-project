@@ -1,6 +1,5 @@
 import React from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
-import { Table } from 'react-bootstrap';
 import filterFactory, { textFilter } from 'react-bootstrap-table2-filter';
 import { Button } from 'react-bootstrap';
 import paginationFactory from 'react-bootstrap-table2-paginator';
@@ -203,22 +202,6 @@ const JobAdd = () => {
         fileName("");
     }
 
-    const rowClasses = (row, rowIndex) => {
-        let h;
-        if (row.tags.length >= 2) {
-            h = 'custom-row-class';
-        }
-        return h;
-    };
-    const rowStyle = (row, rowIndex) => {
-        // console.log("--rowrowrow--", row.tags);
-        let h;
-        if (row.tags.length >= 2) {
-            h = { backgroundColor: 'red' };
-        }
-        return h;
-    };
-
     return (
         <div className='containers'>
             <ToolkitProvider
@@ -248,51 +231,12 @@ const JobAdd = () => {
                             striped
                             hover
                             condensed
-                            // rowClasses={rowClasses}
-                            // rowStyle={rowStyle}
-                            // rowStyle={{ backgroundColor: 'red' }}
                         />
-                        {/* <Table striped bordered hover responsive="md">
-                            
-                            <thead>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>Product</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Shirt</td>
-                                    <td>2</td>
-                                    <td>$200</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>T-shirt</td>
-                                    <td>1</td>
-                                    <td>$100</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Pant</td>
-                                    <td>1</td>
-                                    <td>$300</td>
-                                </tr>
-                                <tr>
-                                    <td colSpan="3">Total Price</td>
-                                    <td>$600</td>
-                                </tr>
-                            </tbody>
-                        </Table>  */}
                     </div>
                 )}
             </ToolkitProvider>
         </div>
     );
 }
-// }
 
 export default JobAdd;

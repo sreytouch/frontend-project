@@ -9,7 +9,7 @@ import ForgotPassword from './pages/ForgotPassword';
 import ChangePassword from './pages/ChangePassword';
 import Home from './pages/Home'; 
 import NotFound from './pages/NotFound';
-import Echart from './pages/Echart';
+import HomePgaeEchart from './pages/HomePgaeEchart';
 import Students from './pages/Students';
 import Faculty from './pages/Faculty';
 import JobAdd from './pages/JobAdd';
@@ -28,10 +28,10 @@ function App() {
           <Route path='/reset-password' element={<ResetPassword />}></Route>
           <Route path='/change-password' element={<ChangePassword />}></Route>
           <Route path='/dashboard' element={<Home />}></Route>
-          <Route path='/echart' element={<Echart />}></Route>
+          <Route path='/home-page' element={<HomePgaeEchart />}></Route>
           <Route path='/student' element={<Students />}></Route>
           <Route path='/faculty' element={<Faculty />}></Route>
-          <Route path='/job-add' element={<JobAdd />}></Route>
+          <Route path='/job-ad' element={<JobAdd />}></Route>
           <Route path='/tag' element={<Tag />}></Route>
           <Route path='/department' element={<Department />}></Route>
           <Route path='*' element={<NotFound />} />
