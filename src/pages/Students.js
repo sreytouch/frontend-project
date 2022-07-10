@@ -60,7 +60,7 @@ const Students = () => {
   const { SearchBar, ClearSearchButton } = Search;
 
   return (
-    <div className="App">
+    <div className="App containers">
 
       <ToolkitProvider
         bootstrap4

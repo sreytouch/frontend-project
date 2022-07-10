@@ -13,6 +13,8 @@ import Echart from './pages/Echart';
 import Students from './pages/Students';
 import Faculty from './pages/Faculty';
 import JobAdd from './pages/JobAdd';
+import Tag from './pages/Tag';
+import Department from './pages/Department';
 import PrivateRoute from './components/PrivateRoute';
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
           <Route path='/student' element={<Students />}></Route>
           <Route path='/faculty' element={<Faculty />}></Route>
           <Route path='/job-add' element={<JobAdd />}></Route>
+          <Route path='/tag' element={<Tag />}></Route>
+          <Route path='/department' element={<Department />}></Route>
           <Route path='*' element={<NotFound />} />
           <Route path='/not-found' element={<NotFound />} />
         </Routes>

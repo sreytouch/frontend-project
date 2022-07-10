@@ -136,7 +136,7 @@ const Faculty = () => {
   ];
 
   return (
-    <div>
+    <div className="containers">
       <ToolkitProvider
         bootstrap4
         keyField="name"

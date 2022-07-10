@@ -38,7 +38,7 @@ const ClearButton = props => {
     );
 };
 
-const AddButton = props => {
+const AddJobs = props => {
     const handleClick = () => {
         // props.onSearch("");
         // props.clearAllFilter();
@@ -59,8 +59,6 @@ const AddButton = props => {
         </Button>
     );
 };
-
-
 
 const pagination = paginationFactory({
     page: 1,
@@ -104,7 +102,7 @@ const JobAdd = () => {
     const ApplyBtn = (cell, row, rowIndex, formatExtraData) => {
         return (
             <div>
-                <Button> Apply </Button> &nbsp;
+                <Button className='small-btn'> Apply </Button> &nbsp;
                 {/* <Button> Edit </Button> */}
                 <EditJob />
             </div>
@@ -222,7 +220,7 @@ const JobAdd = () => {
     };
 
     return (
-        <div>
+        <div className='containers'>
             <ToolkitProvider
                 bootstrap4
                 keyField="name"
@@ -240,7 +238,7 @@ const JobAdd = () => {
                             {...props.searchProps}
                             clearAllFilter={clearAllFilter}
                         />
-                        {/* <AddButton/> */}
+                        {/* <AddJobs/> */}
                         <AddJob />
                         <BootstrapTable
                             {...props.baseProps}

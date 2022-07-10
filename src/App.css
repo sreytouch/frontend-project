@@ -5,8 +5,23 @@ table {
   table-layout: fixed;
   vertical-align: middle;
 }
+
 table thead tr th {
   vertical-align: middle;
+}
+
+.small-btn{
+  padding: 4px 10px !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+}
+
+.containers {
+  max-width: 1400px;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .btn-add{
