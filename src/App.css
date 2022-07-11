@@ -4,10 +4,16 @@ table {
   border-collapse: collapse;
   table-layout: fixed;
   vertical-align: middle;
+  text-align: center;
 }
 
 table thead tr th {
   vertical-align: middle;
+}
+
+.student-detail{    
+  margin-top: 50px !important;
+  margin-bottom: 30px;
 }
 
 .small-btn{
@@ -35,9 +41,9 @@ table td {
   word-wrap: break-word;
 }
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -64,7 +70,6 @@ table td {
   text-align: center;
 }
 
-
 .text-left{
   text-align: left;
 }
@@ -85,6 +90,13 @@ table td {
 .top{
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.link-student-detail{
+  margin: 0;
+  padding: 9px 36%;
+  color: #212529;
+  text-decoration: none;
 }
 
 .name-project{

@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import HomePgaeEchart from './pages/HomePgaeEchart';
 import Students from './pages/Students';
+import StudentsDetail from './pages/StudentsDetail';
 import Faculty from './pages/Faculty';
 import JobAdd from './pages/JobAdd';
 import Tag from './pages/Tag';
@@ -30,6 +31,7 @@ function App() {
           <Route path='/dashboard' element={<Home />}></Route>
           <Route path='/home-page' element={<HomePgaeEchart />}></Route>
           <Route path='/student' element={<Students />}></Route>
+          <Route path='/students-detail/:id' element={<StudentsDetail />}></Route>
           <Route path='/faculty' element={<Faculty />}></Route>
           <Route path='/job-ad' element={<JobAdd />}></Route>
           <Route path='/tag' element={<Tag />}></Route>

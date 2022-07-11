@@ -38,7 +38,7 @@ const Faculty = () => {
   };
 
   const pagination = paginationFactory({
-    page: 2,
+    page: 1,
     sizePerPage: 5,
     lastPageText: '>>',
     firstPageText: '<<',
@@ -169,6 +169,5 @@ const Faculty = () => {
     </div>
   );
 }
-// }
 
 export default Faculty;
